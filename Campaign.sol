@@ -6,4 +6,35 @@ contract CampaignFactory {
     function createCampaign(uint minimum) public {
         address newCampaign = new Campaign(minimum, msg.sender);
         deployedCampaigns.push(newCampaign);
+    }
+
+    function getDeployedCampaigns() public view returns (address[]) {
+        return deployedCampaigns;
+    }
+}
+//contract and struct deifnation 
+contract Campaign {
+    struct Request {
+        string description;
+        uint value;
+        address recipient;
+        bool complete;
+        uint approvalCount;
+        mapping(address => bool) approvals;
+    }
+
+    Request[] public requests;
+    address public manager;
+    uint public minimumContribution;
+    mapping(address => bool) public approvers;
+    uint public approversCount;
+// modifiers are redudunat code that have to be used again and again 
+    modifier restricted() {
+        require(msg.sender == manager);
+        _;
+    }
+
+    function Campaign(uint minimum, address creator) public {
+        manager = creator;
+        minimumContribution = minimum;
 }
