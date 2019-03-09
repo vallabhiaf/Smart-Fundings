@@ -1,5 +1,19 @@
 pragma solidity ^0.4.17;
 
+//for automating the deployement
+contract CampaignFactory {
+    address[] public deployedCampaigns;
+
+    function createCampaign(uint minimum) public {
+        address newCampaign = new Campaign(minimum, msg.sender);
+        deployedCampaigns.push(newCampaign);
+    }
+
+    function getDeployedCampaigns() public view returns (address[]) {
+        return deployedCampaigns;
+    }
+}
+
 //campaign structure
 // request data type
 contract Campaign {
