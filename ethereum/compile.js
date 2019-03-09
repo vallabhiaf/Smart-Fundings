@@ -14,7 +14,7 @@ const output = solc.compile(source,1).contracts;
 
 fs.ensureDirSync(buildPath);
 // writes A JSON FILE TO THE SPECIFIED FOLDER OF BOTH THE KEYS OF THE TWO contracts
-//USE CONSOLE.LOG(OUTPUT); 
+//USE CONSOLE.LOG(OUTPUT);
 for (let contract in output) {
 	fs.outputJsonSync(
 		path.resolve(buildPath, contract.replace(':','') + '.json'),
