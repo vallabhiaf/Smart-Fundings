@@ -7,11 +7,11 @@ export default() =>{
 			<Grid centered columns={3}>
     				<Grid.Column>
         				<Rail dividing position='left'>
-          					CrowdCoin, IBC <Icon name='copyright' /> 2018
+          					NUMBER[0](vallabhiaf) <Icon name='copyright' /> 2019
         				</Rail>
         				<Rail>
-        					<Icon name='call' />+919428678714 
-        					 <Icon name='home' />IIIT Vadodara 
+        					<Icon name='call' />+7379072080
+        					 <Icon name='home' />India
         				</Rail>
 				        <Rail dividing position='right'>
         				        Follow us on <Icon name='linkedin square' /> <Icon name='facebook f' /> <Icon name='pinterest square' /> <Icon name='twitter' /> <Icon name='google plus' /> <Icon name='youtube play' /> <Icon name='quora' />

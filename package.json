@@ -31,10 +31,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smitrajput/D-Crowdfund.git"
+    "url": "git+https://github.com/vallabhiaf/kickstart"
   },
   "bugs": {
-    "url": "https://github.com/smitrajput/D-Crowdfund/issues"
+    "url": "https://github.com/vallabhiaf/kickstart/issues"
   },
-  "homepage": "https://github.com/smitrajput/D-Crowdfund#readme"
+  "homepage": "https://github.com/vallabhiaf/kickstart#readme"
 }

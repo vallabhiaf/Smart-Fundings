@@ -6,19 +6,19 @@ export default() =>{
 		<Menu style={{ marginTop: '10px'}}>
 			<Link route="/">
 				<a className="item" >
-					<Icon color='teal' name='home' size='big' /> 
-					CrowdCoin
+					<Icon color='teal' name='home' size='big' />
+					Smartcoin
 				</a>
 			</Link>
 			<Menu.Menu position="right">
 				<Link route="/">
-				<a className="item"> 
-					<p style={{color:'teal'}}>Campaigns</p>
+				<a className="item">
+					<p style={{color:'magenta'}}>Campaigns</p>
 				</a>
 			</Link>
-			
+
 			<Link route="/campaigns/new">
-				<a className="item"> 
+				<a className="item">
 					<p style={{color:'teal'}}>+</p>
 				</a>
 			</Link>
